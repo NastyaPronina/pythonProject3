@@ -100,12 +100,22 @@
 # nominal = int(input())
 # print(nominal - price)
 
-name = input()
-price = int(input())
-weight = int(input())
-itogo = weight * price
-money = int(input())
-change = money - itogo
-print(f'{"Чек":=^35}\nТовар:{name:>29}\nЦена:{price:>30}\nИтого:{itogo:>29}\nВнесено:{money:>27}\nСдача:{change:>29}')
+# name = input()
+# price = int(input())
+# weight = int(input())
+# itogo = weight * price
+# money = int(input())
+# change = money - itogo
+# print(f'{"Чек":=^35}\nТовар:{name:>29}\nЦена:{price:>30}\nИтого:{itogo:>29}\nВнесено:{money:>27}\nСдача:{change:>29}')
+
+# n = int(input())
+# m = int(input())
+# k_1 = int(input())
+# k_2 = int(input()) # k_2 > k_1
+# x = n * (m - k_2) // (k_1 - k_2)
+# y = n - (n * (m - k_2) // (k_1 - k_2))
+# print(x, y)
+
+
 
 
