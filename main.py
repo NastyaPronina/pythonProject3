@@ -116,6 +116,64 @@
 # y = n - (n * (m - k_2) // (k_1 - k_2))
 # print(x, y)
 
+# =============if-esle===============
+# name = input()
+# answer = input()
+# print("Как Вас зовут?")
+# print("Здравствуйте, ", name, "!", sep="")
+# print("Как дела?")
+# if answer=="хорошо":
+#     print("Я за вас рада!")
+# else:
+#     print("Все наладится!")
+
+# speed_Petya = int(input())
+# speed_Vasya = int(input())
+# distance = 43872
+# time_Petya = distance // speed_Petya
+# time_Vasya = distance // speed_Vasya
+# if time_Petya > time_Vasya:
+#     print("Вася")
+# else:
+#     print("Петя")
+
+# distance = 43872
+# speed_Petya = int(input())
+# speed_Vasya = int(input())
+# speed_Tolya = int(input())
+# time_P = distance // speed_Petya
+# time_V = distance // speed_Vasya
+# time_T = distance // speed_Tolya
+# if time_P < time_V and time_P < time_T:
+#     print("Петя")
+# elif time_V < time_P and time_V < time_T:
+#     print("Вася")
+# else:
+#     print("Толя")
+
+distance = 43872
+speed_Petya = int(input())
+speed_Vasya = int(input())
+speed_Tolya = int(input())
+if max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Petya:
+    if speed_Vasya > speed_Tolya:
+        print("1. Петя\n2. Вася\n3. Толя")
+    else:
+        print("1. Петя\n2. Толя\n3. Вася")
+elif max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Vasya:
+    if speed_Petya > speed_Tolya:
+        print("1. Вася\n2. Петя\n3. Толя")
+    else:
+        print("1. Вася\n2. Толя\n3. Петя")
+else:
+    if speed_Petya > speed_Vasya:
+        print("1. Толя\n2. Петя\n3. Вася")
+    else:
+        print("1. Толя\n2. Вася\n3. Петя")
+
+
+
+
 
 
 
