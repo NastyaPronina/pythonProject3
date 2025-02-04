@@ -151,25 +151,95 @@
 # else:
 #     print("Толя")
 
-distance = 43872
-speed_Petya = int(input())
-speed_Vasya = int(input())
-speed_Tolya = int(input())
-if max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Petya:
-    if speed_Vasya > speed_Tolya:
-        print("1. Петя\n2. Вася\n3. Толя")
-    else:
-        print("1. Петя\n2. Толя\n3. Вася")
-elif max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Vasya:
-    if speed_Petya > speed_Tolya:
-        print("1. Вася\n2. Петя\n3. Толя")
-    else:
-        print("1. Вася\n2. Толя\n3. Петя")
-else:
-    if speed_Petya > speed_Vasya:
-        print("1. Толя\n2. Петя\n3. Вася")
-    else:
-        print("1. Толя\n2. Вася\n3. Петя")
+# distance = 43872
+# speed_Petya = int(input())
+# speed_Vasya = int(input())
+# speed_Tolya = int(input())
+# if max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Petya:
+#     if speed_Vasya > speed_Tolya:
+#         print("1. Петя\n2. Вася\n3. Толя")
+#     else:
+#         print("1. Петя\n2. Толя\n3. Вася")
+# elif max(speed_Petya, speed_Vasya, speed_Tolya) == speed_Vasya:
+#     if speed_Petya > speed_Tolya:
+#         print("1. Вася\n2. Петя\n3. Толя")
+#     else:
+#         print("1. Вася\n2. Толя\n3. Петя")
+# else:
+#     if speed_Petya > speed_Vasya:
+#         print("1. Толя\n2. Петя\n3. Вася")
+#     else:
+#         print("1. Толя\n2. Вася\n3. Петя")
+
+k = [3, 4, 2, 1, 9]
+# temp = 0
+#
+# for i in range(len(k)-1):
+#     for j in range(len(k)-1):
+#         if k[j] > k[j+1]:
+#             temp = k[j+1]
+#             k[j+1] = k[j]
+#             k[j] = temp
+
+# [3, 2, 1, 4, 9]
+# [2, 1, 3, 4, 9]
+# [1, 2, 3, 4, 9]
+# [1, 2, 3, 4, 9]
+# [1, 2, 3, 4, 9]
+# print(k)
+
+# k = [3, 4, 2, 1, 9]
+
+# найти максимальный элемент массива
+# max = -999
+# for i in range(len(k)):
+#     if k[i] > max:
+#         max = k[i]
+# print(max)
+
+# найти сумму элементов массива
+# sum = 0
+# for i in range(len(k)):
+#     sum = sum + k[i]
+# print(sum)
+
+# вывести массив в обратном порядке
+# print(k[::-1])
+# arr1 = [3, 4, 2, 1, 9]
+# arr2 = [0] * 5
+# for i in range(len(arr1), 0, -1):
+#     print(i)
+#     arr2[len(arr1)-i] = arr1[i-1]
+#
+# print(arr2)
+
+# arr1 = [3, 4, 2, 1, 9]
+# arr1.append(14)
+# arr1.reverse()
+# print(arr1)
+
+# поменять местами максимальный и минимальный элемент массива
+arr1 = [1, 2, 5, 4]
+max = 0
+min = 999
+for i in range(len(arr1)):
+    if arr1[i] > max:
+        max = arr1[i]
+    if arr1[i] < min:
+        min = arr1[i]
+print(max, min)
+#     temp = max
+#     max = min
+#     min = max
+# print(arr1)
+
+
+
+
+
+
+
+
 
 
 
