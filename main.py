@@ -1,6 +1,6 @@
 # num1 = int(input("Input the first digit: "))
 # num2 = int(input("Input the second digit: "))
-
+from operator import truediv
 
 # print("Result: ", num1 + num2)
 # print("Result: ", num1 - num2)
@@ -266,7 +266,7 @@
 #             print(arr)
 # print(f"отсортированный массив: {arr}")
 
-
+#
 # Бинарный поиск Напишите программу, которая запрашивает у пользователя отсортированный
 # список чисел и число для поиска. Программа должна использовать бинарный поиск для
 # определения, содержится ли число в списке. Программа должна выводить индекс числа
@@ -274,7 +274,8 @@
 
 # arr = [2, 3, 5, 7, 8, 18, 20]
 # item = int(input("Введите число: "))
-#
+# 22
+# flag = False
 # left = -1
 # right = len(arr)
 # while right > left + 1:
@@ -282,11 +283,14 @@
 #     if arr[middle] > item:
 #         right = middle
 #     elif arr[middle] == item:
+#         flag = True
 #         print(middle)
 #         break
 #     else:
 #         left = middle
-#print("Число не найдено")???
+#
+# if not flag:
+#     print("Число не найдено")
 
 # Быстрая сортировка (Quick Sort) Напишите
 # программу, которая запрашивает у пользователя список чисел и сортирует его с использованием
@@ -294,4 +298,40 @@
 # завершения сортировки.
 
 
+# Вывести все натуральные числа до введенного с клавиатуры
+# n = int(input())
+# for num in range (2, n + 1):
+#     is_prime = True
+#     for i in range(2, int(n**0.5) + 1):
+#         if num%i == 0:
+#             is_prime = False
+#             break
+#     if is_prime:
+#         print(num, " ", end = '')
+
+
+# voice = input()
+# while voice != "Три!":
+#     print("Режим ожидания...")
+#     voice = input()
+# print("Ёлочка, гори!")
+
+# count = 0
+# line = "березка елочка зайка волк березка зайка"
+# if 'зайка' in line:
+#     print('-')
+
+arr = [3, 11, 7, 11, 12, 18, 19]
+i = 3
+j = 2
+
+for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        print(f"Итерация {i}: {arr}")
+        while j >= 0 and key < arr[j]:
+            arr[j + 1] = arr[j]
+            j = j - 1
+        arr[j + 1] = key
+        print(f"После вставки: {arr}")
 
