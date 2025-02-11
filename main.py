@@ -251,9 +251,9 @@ from operator import truediv
 # print(k)
 
 
-# Сортировка пузырьком Напишите программу,
+# """Сортировка пузырьком Напишите программу,
 # которая запрашивает у пользователя список чисел и сортирует его методом пузырька.
-# Программа должна выводить список после каждой итерации сортировки.
+# Программа должна выводить список после каждой итерации сортировки."""
 # arr = [int(input()) for i in range(3)]
 # temp = 0
 #
@@ -266,15 +266,14 @@ from operator import truediv
 #             print(arr)
 # print(f"отсортированный массив: {arr}")
 
-#
-# Бинарный поиск Напишите программу, которая запрашивает у пользователя отсортированный
+
+# """Бинарный поиск Напишите программу, которая запрашивает у пользователя отсортированный
 # список чисел и число для поиска. Программа должна использовать бинарный поиск для
 # определения, содержится ли число в списке. Программа должна выводить индекс числа
 # в списке или сообщение о том, что число не найдено.
-
+# """
 # arr = [2, 3, 5, 7, 8, 18, 20]
 # item = int(input("Введите число: "))
-# 22
 # flag = False
 # left = -1
 # right = len(arr)
@@ -321,17 +320,115 @@ from operator import truediv
 # if 'зайка' in line:
 #     print('-')
 
-arr = [3, 11, 7, 11, 12, 18, 19]
-i = 3
-j = 2
+# arr = [3, 11, 7, 11, 12, 18, 19]
+# i = 3
+# j = 2
+#
+# for i in range(1, len(arr)):
+#         key = arr[i]
+#         j = i - 1
+#         print(f"Итерация {i}: {arr}")
+#         while j >= 0 and key < arr[j]:
+#             arr[j + 1] = arr[j]
+#             j = j - 1
+#         arr[j + 1] = key
+#         print(f"После вставки: {arr}")
+# ===================================================== массивы ==============================================================
+#
+arr = [3, 2, 4, 2]
+# d_1, d_2, d_3 = arr
+# print(d_3)
+# print(len(arr))
+# print(sorted(arr))
+# print(max(arr))
+# arr.append(8) # добавляет элемент массива в конец списка
+# arr.extend([1, 2, "b"]) # добавляет несколько значений в конец списка
+# arr.insert(0, 7) # добавляет значение в начало списка (индекс, что вставить)
+# arr.remove(2) # удаляет первое вхождение элемента 2
+# arr.clear() # очищает весь массив
+# print(arr.pop(3)) # удаляет и возвращает элемент с заданным индексом
+# print(arr)
+# arr.reverse()
+# print(arr.count(2)) # выводит кол-во повторений элемента заданного
+# arr_1 = arr.copy() # создает копию массива
+# print(arr.index(4)) # возвращает индекс элементов
+# print(arr)
 
-for i in range(1, len(arr)):
-        key = arr[i]
-        j = i - 1
-        print(f"Итерация {i}: {arr}")
-        while j >= 0 and key < arr[j]:
-            arr[j + 1] = arr[j]
-            j = j - 1
-        arr[j + 1] = key
-        print(f"После вставки: {arr}")
+"""
+Список студентов
+"""
+# students = []
+# students.append("Mike")
+# students.append("John")
+# students.append("Sara")
+# students.remove("Sara")
+# print(students.index("Mike"))
+# print(students)
+
+"""
+Список чисел
+"""
+# digits = [1, 2, 5, 3, 4, 5]
+# digits.reverse()
+# digits.sort(reverse=True)
+# print(digits.count(5))
+# print(digits)
+
+"""
+Работа со списками и циклы
+"""
+# digits = [1, 4, 2, 6]
+# digits_1 = []
+# for i in digits:
+#     digits_1.append(i*2)
+# print(digits_1)
+
+"""
+match case:
+"""
+# value = int(input("Enter digit "))
+# match value:
+#     case 1:
+#         print(f"Выбрано значение {value}")
+#     case 2:
+#         print(f"Выбрано значение {value}")
+#     case 3:
+#         print(f"Выбрано значение {value}")
+#     case 4:
+#         print(f"Выбрано значение {value}")
+
+"""
+Меню
+"""
+# students = ["Sara", "Pit", "John"]
+# while True:
+#     print("1. Добавление студента")
+#     print("2. Отчисление студента")
+#     print("3. Вывести список студентов")
+#     print("4. Отсортировать список студентов")
+#     print("5. Добавление студента")
+#     choose = int(input("Введите значение "))
+#     match choose:
+#         case 1:
+#             students.append("Mike")
+#         case 2:
+#             students.remove("Sara")
+#         case 3:
+#             print(students)
+#         case 4:
+#             print(students.sort())
+#         case 5:
+#             break
+#         case _:
+#             print("bye")
+
+students = ["Sara", "Pit", "John", "Peter"]
+new_students = []
+for i in students:
+    new_students.append(i[0])
+# посчитать сколько раз встречается каждая заглавная буква, которую мы добавили в новый массив
+for i in new_students:
+    if new_students.count(i) > 1:
+        new_students.remove(i)
+print(new_students)
 
